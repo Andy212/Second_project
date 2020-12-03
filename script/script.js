@@ -4,13 +4,13 @@ const isNumber = function(n){
 };
 let number = 0;
 
-const MainRandomNumber = function(min, max){
+const mainRandomNumber = function(min, max){
     let random = min -0.5 + Math.random() * (max - min +1);
     return Math.round(random);
 }
 
 const gameNumber = function(){
-    const randomNumber = MainRandomNumber(0, 100);
+    const randomNumber = mainRandomNumber(0, 100);
     console.log('Загаданное число ' + randomNumber); 
     let c = randomNumber;
 
@@ -32,7 +32,7 @@ const gameNumber = function(){
             alert('Введи число!');
             bot();
 
-        }else{
+        }else if(number = c){
             confirm('Поздравляю, Вы угадали!!!');
         }
         
