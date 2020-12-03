@@ -32,7 +32,7 @@ const gameNumber = function(){
             alert('Введи число!');
             bot();
 
-        }else if(number = c){
+        }else if(+number === c){
             confirm('Поздравляю, Вы угадали!!!');
         }
         
